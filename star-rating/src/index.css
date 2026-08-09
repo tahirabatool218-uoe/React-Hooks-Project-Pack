@@ -6,6 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background: #eef2ff;
 }
 
 .app {
@@ -13,27 +14,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f5f7fb;
+  padding: 20px;
 }
 
 .rating-card {
+  width: 380px;
   text-align: center;
   background: white;
-  padding: 32px 42px;
-  border-radius: 18px;
+  padding: 40px 30px;
+  border-radius: 20px;
   border: 1px solid #e5e7eb;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .rating-card h1 {
-  font-size: 28px;
-  margin-bottom: 8px;
-  color: #111827;
+  font-size: 30px;
+  color: #1f2937;
+  margin-bottom: 10px;
 }
 
 .rating-card > p {
   color: #6b7280;
-  margin-bottom: 22px;
   font-size: 15px;
+  margin-bottom: 28px;
 }
-
