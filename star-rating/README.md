@@ -52,19 +52,20 @@ star-rating/
 
 1. Clone the repository
    ```bash
-git clone https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack.git
+    clone https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack.git
+
    ```
 2. Navigate to the project folder
    ```bash
-cd star-rating
+   cd star-rating
    ```
 3. Install dependencies
    ```bash
-npm install
+   npm install
    ```
 4. Start the development server
    ```bash
-npm run dev
+   npm run dev
    ```
 
 Open the local URL shown in the terminal to view the app.
@@ -73,11 +74,11 @@ Open the local URL shown in the terminal to view the app.
 
 - Create a production build:
   ```bash
-npm run build
+  npm run build
   ```
 - Preview the production build locally:
   ```bash
-npm run preview
+  npm run preview
   ```
 
 ## 🧠 What I Practiced
