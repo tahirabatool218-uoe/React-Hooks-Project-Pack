@@ -1,19 +1,18 @@
 # Star Rating App
 
-A simple and responsive React Star Rating application that allows users to rate their experience by selecting from 1 to 5 stars. The application provides interactive hover effects and displays the selected rating.
+A simple and responsive React star rating application that allows users to select a rating from 1 to 5 stars. The app includes hover effects and shows the selected rating below the stars.
 
 ## 🚀 Live Demo
+- **Live Demo:** https://react-hooks-project-pack-seven.vercel.app
 
-**Live Demo:** 
-
-**GitHub Repository:** https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack/tree/main/star-rating
+- **GitHub Repository:** https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack/tree/main/star-rating
 
 ## ✨ Features
 
 - Interactive 1 to 5 star rating
 - Click to select a rating
-- Hover effect to preview the rating
-- Selected rating is displayed below the stars
+- Hover effect to preview rating
+- Selected rating displayed below the stars
 - Active and inactive star states
 - Reusable React component
 - Responsive design
@@ -32,92 +31,105 @@ A simple and responsive React Star Rating application that allows users to rate 
 ## 📁 Project Structure
 
 ```text
-StarRating/
+star-rating/
 ├── public/
 ├── src/
-│   ├── StarRating.jsx
-│   ├── StarRating.css
+│   ├── components/
+│   │   ├── StarRating.jsx
+│   │   └── StarRating.css
 │   ├── App.jsx
-│   ├── App.css
+│   ├── index.css
 │   └── main.jsx
 ├── index.html
 ├── package.json
 ├── package-lock.json
 ├── vite.config.js
 ├── eslint.config.js
-├── .gitignore
 └── README.md
+```
+
+## ⚙️ Setup
 
 1. Clone the repository
+   ```bash
 git clone https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack.git
-2. Navigate to the project directory
-cd StarRating
+   ```
+2. Navigate to the project folder
+   ```bash
+cd star-rating
+   ```
 3. Install dependencies
+   ```bash
 npm install
+   ```
 4. Start the development server
+   ```bash
 npm run dev
+   ```
 
-Open the local URL provided by Vite in your browser.
+Open the local URL shown in the terminal to view the app.
 
-🏗️ Build for Production
+## 🧪 Build and Preview
 
-To create a production-ready build:
-
+- Create a production build:
+  ```bash
 npm run build
-
-To preview the production build locally:
-
+  ```
+- Preview the production build locally:
+  ```bash
 npm run preview
-🧠 What I Practiced
+  ```
 
-This project was built to practice core React concepts, including:
+## 🧠 What I Practiced
 
-Functional Components
-Component-based architecture
-React useState
-State management
-Event handling
-Conditional rendering
-Rendering lists with .map()
-Interactive UI
-Reusable components
-Responsive CSS
-📌 Key React Concept
+This project was built to practice core React concepts:
 
-The star rating functionality is managed using React's useState hook.
+- Functional components
+- Component-based architecture
+- React `useState`
+- State management
+- Event handling
+- Conditional rendering
+- Rendering lists with `.map()`
+- Interactive UI
+- Reusable components
+- Responsive CSS
 
-The application uses two states:
+## 📌 Key React Concept
 
-Rating: Stores the selected star rating.
-Hover: Temporarily displays the rating while the user hovers over the stars.
+The star rating functionality is managed using React's `useState` hook.
 
-When a user clicks a star, the selected rating is stored and displayed below the stars.
+- `rating`: stores the selected star rating
+- `hover`: temporarily displays the preview rating while hovering over stars
 
-⭐ Rating Behavior
+When a user clicks a star, the selected rating is saved and shown below the stars.
 
-The application provides five rating options:
+## ⭐ Rating Behavior
 
-⭐ 1 Star
-⭐⭐ 2 Stars
-⭐⭐⭐ 3 Stars
-⭐⭐⭐⭐ 4 Stars
-⭐⭐⭐⭐⭐ 5 Stars
+The app supports five rating options:
 
-Users can hover over the stars to preview a rating and click a star to select it.
+- ⭐ 1 Star
+- ⭐⭐ 2 Stars
+- ⭐⭐⭐ 3 Stars
+- ⭐⭐⭐⭐ 4 Stars
+- ⭐⭐⭐⭐⭐ 5 Stars
 
-📱 Responsive Design
+Users can hover over the stars to preview the rating and click to select.
 
-The application is designed to work across different screen sizes, including:
+## 📱 Responsive Design
 
-Desktop
-Tablet
-Mobile
-👩‍💻 Author
+The application is designed for use on:
+
+- Desktop
+- Tablet
+- Mobile
+
+## 👩‍💻 Author
 
 Tahira Batool
 
 BSCS Student | React Developer
 
-📄 License
+## 📄 License
 
 This project is created for learning and practice purposes.
