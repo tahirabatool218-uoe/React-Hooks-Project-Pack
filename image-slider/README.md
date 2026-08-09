@@ -4,7 +4,7 @@ A simple and responsive React Image Slider application that fetches images from 
 
 ## 🚀 Live Demo
 
-**Live Demo:** 
+**Live Demo:** https://image-slider-nine-delta.vercel.app
 
 **GitHub Repository:**  
 https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack/tree/main/image-slider
