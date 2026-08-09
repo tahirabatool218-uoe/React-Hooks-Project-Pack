@@ -1,0 +1,112 @@
+.accordion {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Single Accordion Item */
+
+.accordion-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e4ec;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+/* Question Button */
+
+.accordion-question {
+  width: 100%;
+  padding: 20px 22px;
+  border: none;
+  background-color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  cursor: pointer;
+
+  font-size: 17px;
+  font-weight: 600;
+  color: #17213d;
+  text-align: left;
+
+  transition: background-color 0.2s ease;
+}
+
+.accordion-question:hover {
+  background-color: #f7f9fc;
+}
+
+/* Plus / Minus Icon */
+
+.accordion-question span:last-child {
+  min-width: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #2563eb;
+  text-align: center;
+}
+
+/* Answer */
+
+.accordion-answer {
+  padding: 0 22px 20px;
+  border-top: 1px solid #e8ebf0;
+}
+
+.accordion-answer p {
+  margin: 16px 0 0;
+  color: #5c6785;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+}
+.multiple-button {
+  display: block;
+  margin: 0 auto 25px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.multiple-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .accordion-question {
+    padding: 16px;
+    font-size: 15px;
+    gap: 12px;
+  }
+
+  .accordion-question span:last-child {
+    min-width: 25px;
+    font-size: 22px;
+  }
+
+  .accordion-answer {
+    padding: 0 16px 16px;
+  }
+
+  .accordion-answer p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .accordion-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+}
