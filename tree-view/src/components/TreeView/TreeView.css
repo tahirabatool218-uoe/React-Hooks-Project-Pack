@@ -1,0 +1,54 @@
+.tree-view {
+max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+
+.tree-item {
+  margin: 6px 0;
+}
+
+.tree-item-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px;
+}
+
+.tree-item-content:hover {
+  background-color: #f1f1f1;
+}
+
+.toggle-btn {
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.folder-icon {
+  color: #f5b400;
+}
+
+.file-icon {
+  color: #555;
+}
+
+.tree-item-content span {
+  font-size: 16px;
+}
+
+.tree-children {
+  margin-left: 28px;
+}
