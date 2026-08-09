@@ -1,5 +1,4 @@
-import StarRating from "./componenets/StarRating"
-
+import StarRating from "./components/StarRating";
 
 function App() {
   
