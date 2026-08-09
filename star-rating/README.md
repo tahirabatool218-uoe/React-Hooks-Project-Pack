@@ -3,7 +3,7 @@
 A simple and responsive React star rating application that allows users to select a rating from 1 to 5 stars. The app includes hover effects and shows the selected rating below the stars.
 
 ## 🚀 Live Demo
-- **Live Demo:** https://react-hooks-project-pack-seven.vercel.app
+- **Live Demo:** https://star-rating-6gbwzusd7-tahirabatool218-5861s-projects.vercel.app
 
 - **GitHub Repository:** https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack/tree/main/star-rating
 
