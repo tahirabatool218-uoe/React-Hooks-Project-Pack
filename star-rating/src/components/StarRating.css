@@ -1,0 +1,40 @@
+.stars-container {
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.stars span {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.stars svg {
+  font-size: 36px;
+}
+
+.stars .active {
+  color: #fbbf24;
+}
+
+.stars .inactive {
+  color: #d1d5db;
+}
+
+.stars span:hover {
+  transform: scale(1.12);
+}
+.rating-text {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 14px;
+  font-weight: 500;
+}
