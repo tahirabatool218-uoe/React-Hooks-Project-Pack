@@ -4,9 +4,9 @@ A simple and responsive React Accordion application that allows users to expand 
 
 ## 🚀 Live Demo
 
-**Live Demo:** https://accordion-app-eight.vercel.app
+**Live Demo:** https://react-hooks-project-pack-seven.vercel.app
 
-**GitHub Repository:** https://github.com/tahirabatool218-uoe/AccordionApp
+**GitHub Repository:** https://github.com/tahirabatool218-uoe/React-Hooks-Project-Pack/tree/main/accordion-app
 
 ## ✨ Features
 
