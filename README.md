@@ -2,19 +2,19 @@
 
 A hands-on React learning repository focused on understanding React Hooks through practical, small-scale projects.
 
-Instead of learning Hooks only through theory, this project pack focuses on building functional applications where React concepts are applied to real UI interactions, state management, API integration, and reusable component patterns.
+Instead of learning React Hooks only through theory, this project pack focuses on building functional applications where React concepts are applied to real UI interactions, state management, API integration, DOM interaction, reusable components, and dynamic rendering.
 
 ## 🎯 Learning Objective
 
 The main goal of this project pack is to strengthen practical React development skills by building multiple focused applications.
 
-The primary React Hooks covered throughout this learning journey are:
+The three primary React Hooks practiced throughout this learning journey are:
 
 - `useState`
 - `useEffect`
 - `useRef`
 
-Each project focuses on a specific problem and provides practical experience with React state, effects, events, dynamic rendering, API data, and component architecture.
+Each project focuses on a specific problem and provides practical experience with React state, side effects, events, DOM references, API data, conditional rendering, recursive components, and reusable component patterns.
 
 ---
 
@@ -27,10 +27,10 @@ Each project focuses on a specific problem and provides practical experience wit
 | 03 | [Image Slider](./image-slider) | `useState`, `useEffect`, API Fetching | ✅ Completed |
 | 04 | [Load More Data](./load-more-data) | `useState`, `useEffect`, API, Pagination | ✅ Completed |
 | 05 | [Tree View](./tree-view) | `useState`, Props, Recursion, Nested Data | ✅ Completed |
-| 06 | Weather App | `useEffect`, API Fetching, Loading & Error States | 🔄 In Progress |
-| 07 | Food Recipe App | API Fetching, Search, Filtering, State Management | 📌 Upcoming |
+| 06 | [QR Code Generator](./qr-code-generator) | `useState`, Controlled Input, Package Integration | ✅ Completed |
+| 07 | [Focus Input App](./focus-input-app) | `useRef`, DOM Reference, Focus Interaction | ✅ Completed |
 
-> More projects will be added as the learning journey continues.
+> This project pack focuses on practical React Hook learning through small, independent applications.
 
 ---
 
@@ -43,24 +43,35 @@ Each project focuses on a specific problem and provides practical experience wit
 ### Practiced in:
 
 **Accordion App**
+
 - Manage opened accordion items
-- Handle Single Selection and Multiple Selection modes
+- Handle single selection and multiple selection modes
 
 **Star Rating**
+
 - Store the selected rating
 - Manage temporary hover state
 
 **Image Slider**
+
 - Track the current image
 - Manage loading and error states
 
 **Load More Data**
+
 - Store fetched products
 - Track loading and error states
 - Manage the number of products displayed
 
 **Tree View**
+
 - Control whether folders are expanded or collapsed
+
+**QR Code Generator**
+
+- Store the input value
+- Store the value used for QR code generation
+- Update the QR code dynamically
 
 ---
 
@@ -71,29 +82,43 @@ Each project focuses on a specific problem and provides practical experience wit
 ### Practiced in:
 
 **Image Slider**
+
 - Fetch image data from an API
 - Load data when the component renders
+- Handle asynchronous data
 
 **Load More Data**
+
 - Fetch product data from an API
 - Handle asynchronous data loading
 - Update the UI when new data is fetched
-
-**Weather App**
-- API integration and fetching weather data
-- Loading and error handling
 
 ---
 
 ## 3. `useRef`
 
-`useRef` is one of the core Hooks included in this learning roadmap.
+`useRef` is used to create a reference to a DOM element and interact with it directly.
 
-It will be practiced in upcoming projects to understand how React can maintain a mutable reference without causing unnecessary re-renders and how DOM elements can be accessed when required.
+### Practiced in:
 
-### Learning Goal
+**Focus Input App**
 
-The goal is to understand when `useRef` should be used instead of `useState`, and how it can be applied in practical React applications.
+- Create a reference to the input element
+- Access the input through `.current`
+- Programmatically focus the input
+- Understand practical DOM interaction with `useRef`
+
+Example:
+
+```jsx
+const inputRef = useRef(null);
+
+<input ref={inputRef} />
+
+inputRef.current.focus();
+```
+
+This project provides practical understanding of how `useRef` differs from `useState`.
 
 ---
 
@@ -110,9 +135,17 @@ Alongside React Hooks, this project pack provides practical experience with:
 - `useRef`
 - Conditional Rendering
 - Event Handling
+- `onClick`
+- `onChange`
+- `onMouseEnter`
+- `onMouseLeave`
 - `.map()` for List Rendering
+- Controlled Inputs
 - Nested Data
 - Recursive Components
+- DOM References
+- `.current`
+- `focus()`
 - API Fetching
 - Asynchronous JavaScript
 - Loading States
@@ -122,6 +155,7 @@ Alongside React Hooks, this project pack provides practical experience with:
 - Hover Interactions
 - Dynamic UI Updates
 - Reusable Components
+- Third-party Package Integration
 - React Icons
 - Responsive CSS
 
@@ -144,9 +178,10 @@ A responsive accordion application where users can expand and collapse content.
 - Reusable Components
 - Data-driven UI
 
+![Accordion App](./accordion.png)
+
 [View Project →](./accordion-app)
 
-![Accordion App](./accordion.png)
 ---
 
 ## 02. Star Rating
@@ -163,9 +198,9 @@ An interactive star rating application where users can select a rating and previ
 - Conditional Styling
 - React Icons
 
-[View Project →](./star-rating)
-
 ![Star Rating](./star-rating.png)
+
+[View Project →](./star-rating)
 
 ---
 
@@ -183,15 +218,15 @@ An image slider that fetches image data from an API and allows users to navigate
 - Dynamic Image Rendering
 - React Icons
 
-[View Project →](./image-slider)
-
 ![Image Slider](./image-slider.png)
+
+[View Project →](./image-slider)
 
 ---
 
 ## 04. Load More Data
 
-A product listing application that fetches products from an API and loads additional products using a Load More Data button.
+A product listing application that fetches products from an API and loads additional products using a **Load More Data** button.
 
 Previously loaded products remain visible while the next set of products is fetched.
 
@@ -210,9 +245,9 @@ The button becomes disabled when all available products have been displayed.
 - Disabled Button State
 - Dynamic Data Rendering
 
-[View Project →](./load-more-data)
-
 ![Load More Data](./load-more.png)
+
+[View Project →](./load-more-data)
 
 ---
 
@@ -234,44 +269,95 @@ Users can expand and collapse folders to explore different levels of nested data
 - Reusable Components
 - React Icons
 
+![Tree View](./tree-view.png)
+
 [View Project →](./tree-view)
 
-![Tree View](./tree-view.png)
+---
+
+## 06. QR Code Generator
+
+A simple and responsive QR Code Generator that allows users to enter text or a URL and generate a corresponding QR code.
+
+The application displays an initial QR code when it loads and updates the QR code when the user enters a new value and clicks the Generate button.
+
+### Practiced Concepts
+
+- `useState`
+- Controlled Inputs
+- Event Handling
+- `onChange`
+- `onClick`
+- Input Validation
+- Dynamic UI Updates
+- Reusable Components
+- Third-party Package Integration
+- `react-qr-code`
+- Responsive CSS
+
+![QR Code Generator](qr-code-generator.png)
+
+[View Project →](./qr-code-generator)
+
+---
+
+## 07. Focus Input App
+
+A small React application created to practice the `useRef` Hook through a practical DOM interaction.
+
+The application provides an input field and a button. When the user clicks the **Focus Input** button, the input field automatically receives focus.
+
+### Practiced Concepts
+
+- `useRef`
+- DOM References
+- `.current`
+- `focus()`
+- Event Handling
+- `onClick`
+- Functional Components
+- Reusable Components
+- Responsive CSS
+
+![Focus Input App](focus-input-app.png)
+
+[View Project →](./focus-input-app)
+
+
 
 ---
 
 # 🔄 Learning Progress
 
-### Completed
+## Completed
 
-**5 projects completed**
+**7 projects completed**
 
-The completed projects have helped build practical understanding of:
+These projects have provided practical experience with:
 
-- State management
+- React state management
 - Side effects
 - API integration
+- DOM interaction
 - Dynamic rendering
+- Conditional rendering
 - Component reuse
 - Recursive components
 - User interactions
 - Loading and error handling
+- Controlled inputs
+- Pagination
+- React package integration
 
-### Currently Learning
+### React Hooks Progress
 
-**Weather App**
+| Hook | Practical Usage | Status |
+|---|---|---|
+| `useState` | Accordion, Star Rating, Image Slider, Load More Data, Tree View, QR Code Generator | ✅ Completed |
+| `useEffect` | Image Slider, Load More Data | ✅ Completed |
+| `useRef` | Focus Input App | ✅ Completed |
 
-Working on API-based weather data, asynchronous operations, loading states, error handling, and practical `useEffect` usage.
-
-### Next
-
-**Food Recipe App**
-
-Planned to practice API data, search functionality, filtering, state management, and dynamic UI rendering.
-
-### Upcoming Hook Practice
-
-`useRef` will be implemented in a suitable project to strengthen practical understanding of references and DOM interaction.
+The three required Hooks, `useState`, `useEffect`, and `useRef`, have now been practiced through practical React applications.
 
 ---
 
@@ -284,6 +370,7 @@ Planned to practice API data, search functionality, filtering, state management,
 - React Hooks
 - React Icons
 - REST APIs
+- `react-qr-code`
 
 ---
 
@@ -314,11 +401,13 @@ React-Hooks-Project-Pack/
 │   ├── src/
 │   └── README.md
 │
-├── weather-app/
-│   └── ...
+├── qr-code-generator/
+│   ├── src/
+│   └── README.md
 │
-└── food-recipe-app/
-    └── ...
+└── focus-input-app/
+    ├── src/
+    └── README.md
 ```
 
 Each project is organized in its own folder and can be developed, tested, and deployed independently.
@@ -377,11 +466,15 @@ npm run preview
 
 React concepts become easier to understand when they are applied to real problems.
 
-This project pack follows a **learn → build → practice → improve** approach.
+This project pack follows a:
 
-Each application is intentionally small so that the focus remains on understanding React concepts instead of building a large application with unnecessary complexity.
+**Learn → Build → Practice → Improve**
 
-Through these projects, I am gradually moving from basic React state management toward API integration, reusable component patterns, recursive rendering, and more advanced Hook usage.
+approach.
+
+Each application is intentionally small so that the focus remains on understanding React concepts instead of building large applications with unnecessary complexity.
+
+Through these projects, I have progressed from basic state management to API integration, reusable component patterns, recursive rendering, controlled inputs, third-party package integration, and DOM interaction using `useRef`.
 
 ---
 
@@ -404,7 +497,11 @@ Reusable Components
         ↓
 Recursive Components
         ↓
+Controlled Inputs
+        ↓
 useRef
+        ↓
+DOM Interaction
         ↓
 More Advanced React Patterns
 ```
@@ -417,7 +514,7 @@ More Advanced React Patterns
 
 BSCS Student | React Developer
 
-This repository represents my ongoing practical learning journey with React.
+This repository represents my practical learning journey with React Hooks and component-based development.
 
 ---
 
